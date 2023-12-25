@@ -33,6 +33,12 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
+  i = {
+    -- Map CapsLock to change mode from insert to normal
+    ["<CapsLock>"] = { "<Esc>", desc = "Change mode to Normal" },
+    -- Add other insert mode mappings here
+  },
+
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,

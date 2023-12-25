@@ -59,7 +59,6 @@ return {
     defaults = { lazy = true },
     performance = {
       rtp = {
-        -- customize default disabled vim plugins
         disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
@@ -78,8 +77,6 @@ return {
     --     ["Foofile"] = "fooscript",
     --   },
     --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+    --     ["~/%.config/foo/.*"] = "fooscript", }, }
   end,
 }
