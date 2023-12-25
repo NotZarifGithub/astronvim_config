@@ -64,6 +64,13 @@ return {
     },
   },
 
+  unocss = {
+    on_attach = on_attach, -- Add your on_attach function here
+    capabilities = capabilities, -- Add your capabilities here
+    filetypes = { "css", "scss", "less" }, -- Add your filetypes here
+    root_dir = function(fname) return require("lspconfig.util").root_pattern(fname) end,
+  },
+
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
